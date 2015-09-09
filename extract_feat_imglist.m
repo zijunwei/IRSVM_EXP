@@ -2,7 +2,7 @@ function extract_feat_imglist(imglist,save_dir,opts)
 % feats=cell(length(imglist),1);
 for i=1:1:length(imglist)
     [~,save_name,~]=fileparts(imglist{i});
-    fprintf('processing %s : [%d out of %d]\n',save_name,i,opts.endid-opts.startid);
+    fprintf('processing %s : [%d out of %d]\n',save_name,i+opts.startid-1,opts.endid);
     im=imread(imglist{i});
     im=convert2Color(im);
     if strcmpi(opts.feattype,'global')

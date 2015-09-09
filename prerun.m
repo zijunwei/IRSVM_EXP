@@ -17,4 +17,4 @@ addpath('bin')
 % add minh's 'MyGradFunction'
 addpath(genpath('/home/hzwzijun/MatlabLibs/MyGradFuncs'));
 
-addpath('utils');
+addpath('./utils');
